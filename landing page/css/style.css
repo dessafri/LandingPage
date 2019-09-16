@@ -1,0 +1,183 @@
+/* DEKSTOP VERSION */
+
+@media (min-width: 992px) {
+    .nav {}
+    .nav-link {
+        margin-top: -30px;
+        text-transform: uppercase;
+        margin-right: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+    }
+    .jumbotron {
+        margin-top: -90px;
+        background-color: #0D174D;
+        width: 672px;
+        height: 800px;
+    }
+    .jumbotron .display-4 {
+        font-family: 'Montserrat Medium', sans-serif;
+        font-size: 56px;
+        color: white;
+        margin-left: 138px;
+        margin-top: 125px;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .jumbotron .display-4 span {
+        color: yellow;
+    }
+    .jumbotron .lead {
+        font-family: 'Montserrat Light', sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-left: 138px;
+    }
+    .textKiri {
+        opacity: 0;
+        transform: translate(-100px, 0);
+        transition: 2s;
+    }
+    .textColor {
+        color: white !important;
+    }
+    .textColor1 {
+        color: #0D174D !important;
+    }
+    .jumbotron .btn-success {
+        margin-left: 138px;
+        margin-top: 60px;
+    }
+    .kotak {
+        position: absolute;
+        width: 328px;
+        height: 70px;
+        margin-top: 130px;
+        margin-left: 138px;
+        background-color: #323F81;
+    }
+    .kotak::after {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background-color: #4D5991;
+    }
+    .play {
+        position: absolute;
+        bottom: 10px;
+        left: 170px;
+    }
+    .text-review {
+        position: absolute;
+        font-family: 'Montserrat Light', sans-serif;
+        font-size: 14px;
+        color: white;
+        left: 231px;
+        bottom: -10px;
+    }
+    .text-review span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .gambar {
+        width: 550px;
+        height: 550px;
+        margin-left: 590px;
+        margin-top: -450px;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transform: translate(50px, 0);
+        transition: 2s;
+    }
+    .bantu {
+        position: absolute;
+        background-color: white;
+        width: 10px;
+        height: 5px;
+        bottom: 35px;
+        right: 350px;
+    }
+    .panah-kanan {
+        position: absolute;
+        right: 230px;
+        bottom: 35px;
+        z-index: 9999;
+    }
+    .panah-kiri {
+        position: absolute;
+        right: 330px;
+        bottom: 35px;
+        transform: rotate(180deg);
+        z-index: 9999;
+    }
+    .navigasi {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        background-color: #0D174D;
+        right: 195px;
+        bottom: 25px;
+    }
+    .navigasi::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        background-color: #4D5991;
+        right: 100px;
+    }
+    .nama {
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        /* display: block; */
+        color: grey;
+        right: 470px;
+        top: 610px;
+    }
+    /* animasi */
+    .textKiri.textMuncul,
+    .gambar.gambarMuncul {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    .tombol {
+        opacity: 0;
+        transition-delay: 10s;
+        transition: 10s;
+    }
+    .tombolMuncul {
+        opacity: 1;
+    }
+    .nama {
+        opacity: 0;
+        transform: translate(-50, 0);
+        transition: 4s;
+    }
+    .navigasi,
+    .panah-kanan,
+    .panah-kiri {
+        opacity: 0;
+        transform: translate(0, 100px);
+        transition: 3s;
+    }
+    .nama.namaMuncul,
+    .navigasi.navigasiMuncul,
+    .panah-kanan.panah-kananMuncul,
+    .panah-kiri.panah-kiriMuncul {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    .kotak,
+    .play,
+    .text-review {
+        transform: translate(0, 100px);
+        transition: 5s;
+    }
+    .kotak.kotakMuncul,
+    .play.playMuncul,
+    .text-review.text-reviewMuncul {
+        transform: translate(0, 0);
+    }
+}
